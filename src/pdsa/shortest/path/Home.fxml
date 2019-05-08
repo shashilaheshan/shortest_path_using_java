@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdsa.shortest.path.HomeController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #455A64;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="844.0" layoutY="14.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loginuser.png" />
+               </image>
+               <effect>
+                  <BoxBlur height="176.04" iterations="0" width="169.82" />
+               </effect>
+            </ImageView>
+            
+            <Label fx:id="txtUser" layoutX="737.0" layoutY="26.0" text="Welcome :User" textFill="#00f2ff" />
+            <ImageView fitHeight="103.0" fitWidth="122.0" layoutX="92.0" layoutY="171.0" onMouseClicked="#OpenBranchView" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@connect%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="103.0" layoutX="386.0" layoutY="171.0" onMouseClicked="#OpenDistanceCalView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@distance.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="321.0" text="Branch Info" textFill="#00ffee">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="354.0" layoutY="321.0" text="Distance Info" textFill="#00ffee">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="113.0" fitWidth="103.0" layoutX="674.0" layoutY="171.0" onMouseClicked="#OpenDistanceCal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@road.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="620.0" layoutY="321.0" text="Shortest Distances" textFill="#00ffee">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <PointLight color="CHARTREUSE" />
+      <ParallelCamera />
+   </children>
+</AnchorPane>

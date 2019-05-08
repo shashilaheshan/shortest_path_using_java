@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdsa.shortest.path.BranchViewController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #455A64;" stylesheets="@table.css">
+         <children>
+            <Label layoutX="21.0" layoutY="27.0" text="Branch Management" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="108.0" text="Add Branch" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="341.0" layoutY="108.0" text="Update Branch" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="635.0" layoutY="108.0" text="Delete Branch" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtBranchName" focusColor="#00ffc8" layoutX="35.0" layoutY="147.0" prefHeight="27.0" prefWidth="215.0" promptText="Branch Name" unFocusColor="#00ffc3" />
+            <JFXTextField fx:id="txtBranchNameUpdate" focusColor="#00ffc8" layoutX="345.0" layoutY="223.0" prefHeight="27.0" prefWidth="215.0" promptText="Branch Name" unFocusColor="#00ffc3" />
+            <JFXComboBox fx:id="cmbBranchName" focusColor="#00ffea" layoutX="343.0" layoutY="152.0" prefHeight="27.0" prefWidth="215.0" promptText="Select Branch" unFocusColor="#13f2cc" />
+            <JFXComboBox fx:id="cmbBranchDelete" focusColor="#00ffea" layoutX="635.0" layoutY="153.0" prefHeight="27.0" prefWidth="215.0" promptText="Select Branch" unFocusColor="#13f2cc" />
+            <JFXButton fx:id="btnAddBranch" buttonType="RAISED" layoutX="86.0" layoutY="271.0" onAction="#addBranch" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #0288D1;" text="Add" textFill="WHITE" />
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="371.0" layoutY="271.0" onAction="#UpdateBranch" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #64DD17;" text="Update" textFill="WHITE" />
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="700.0" layoutY="269.0" onAction="#deleteBranch" prefHeight="27.0" prefWidth="112.0" ripplerFill="#f05513" style="-fx-background-color: #FF6F00;" text="Delete" textFill="WHITE" />
+            <JFXTreeTableView fx:id="branchTable" layoutX="-6.0" layoutY="317.0" prefHeight="283.0" prefWidth="908.0" style="-fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

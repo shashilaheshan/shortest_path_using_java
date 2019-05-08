@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdsa.shortest.path.ShortestPathController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="570.0" prefWidth="900.0" style="-fx-background-color: #455A64;" stylesheets="@table.css">
+         <children>
+            <Label layoutX="21.0" layoutY="27.0" text="Find Distances" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="106.0" text="From Branch" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="599.0" layoutY="108.0" text="To Branch" textFill="#00ffe8">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbFromBranch" focusColor="#00ffea" layoutX="89.0" layoutY="150.0" prefHeight="27.0" prefWidth="215.0" promptText="Select Branch" unFocusColor="#13f2cc" />
+            <JFXComboBox fx:id="cmbToBranch" focusColor="#00ffea" layoutX="599.0" layoutY="153.0" prefHeight="27.0" prefWidth="215.0" promptText="Select Branch" unFocusColor="#13f2cc" />
+            
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="412.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@shuffle.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtDistance" layoutX="43.0" layoutY="300.0" textFill="#00ffea">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="403.0" layoutY="234.0" onAction="#FindDistance" ripplerFill="#a1ffc9" style="-fx-background-color: #26A69A;" text="FIND" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="txtDetails" layoutX="433.0" layoutY="371.0" textFill="#0df3ff" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

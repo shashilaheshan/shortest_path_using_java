@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdsa.shortest.path.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #455A64;" stylesheets="@table.css">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="304.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loginuser.png" />
+               </image>
+               <effect>
+                  <BoxBlur height="176.04" iterations="0" width="169.82" />
+               </effect>
+            </ImageView>
+            <JFXTextField fx:id="txtUsername" focusColor="#00ffea" labelFloat="true" layoutX="209.0" layoutY="155.0" prefHeight="27.0" prefWidth="289.0" promptText="Username" unFocusColor="#2bfbff" />
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="244.0" layoutY="266.0" onAction="#Login" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #00BFA5; -fx-border-radius: 20px; -fx-border-radius: 30;" text="Login" textFill="WHITE" />
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="364.0" layoutY="266.0" onAction="#Clear" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #FFA000;" text="Clear" textFill="WHITE" />
+            <Label layoutX="597.0" layoutY="363.0" text="DB Connected" textFill="#00f2ff" />
+            <JFXPasswordField fx:id="txtPassword" layoutX="209.0" layoutY="218.0" prefHeight="27.0" prefWidth="289.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
